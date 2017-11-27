@@ -10,7 +10,8 @@ body {
 }
 
 #showcase {
-    background-image: url("https://source.unsplash.com/9HTgcn9MSWo/1600x900");
+    /*background-image: url("https://source.unsplash.com/9HTgcn9MSWo/1600x900");*/
+    background-image: url("../img/background.jpg");
     background-size: contain;
     background-position: center;
     height: 100vh;
