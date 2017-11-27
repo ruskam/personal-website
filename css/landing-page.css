@@ -1,273 +1,94 @@
-/*!
- * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-body,
-html {
-    width: 100%;
-    height: 100%;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 500;
-}
-
-h4 {
-    color: #fff !important;
-    font-weight: 300 !important;
-}
-
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-    color: #0062ff;
-}
-
-.topnav {
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-.navbar-brand {
-    padding: 9px 15px;
-}
-
-.topnav img {
-    padding: 0;
-    top: 0;
-}
-
-.lead {
-    font-size: 18px;
-    font-weight: 300;
-}
-
-.intro-header {
-    padding-top: 0px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 0px;
-    text-align: center;
-    color: #000;
-    background: #111;
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    right: 0;
-}
-
-canvas {
-    display: block;
-    vertical-align: bottom;
-    overflow: hidden;
-}
-
-#particles-js {
-    width: 100%;
-    height: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: -1;
-    position: absolute;
-    overflow: hidden;
-}
-
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-
-.intro-message > h1 {
+* {
     margin: 0;
-    font-weight: 500;
-    font-size: 5em;
-    color: #fff;
-    letter-spacing: -2px;
-    line-height: 125%;
+    padding: 0
 }
 
-.intro-message > h3 {
-    width: 50%;
-    font-weight: 400;
-    color: #fff;
-    margin: 0 auto;
-    line-height: 125%;
-}
-
-.intro-divider {
-    width: 500px;
-    border-top: 1px solid #fff;
-}
-
-@media(max-width:767px) {
-    .intro-message {
-        padding: 45% 0;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    .intro-message > h3, h4 {
-        font-size: 1em;
-        width: 100%;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-        text-align: center;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
-}
-
-.network-name {
-    text-transform: uppercase;
+body {
+    margin: 0;
     font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
+    line-height: 1.6;
 }
 
-.content-section-a {
-    padding: 100px 0;
-    float: left;
-    margin-top: 700px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-    clear: both;
-    background-color: #f8f8f8;
+#showcase {
+    background-image: url("https://source.unsplash.com/9HTgcn9MSWo/1600x900");
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*color: #926329;*/
+    color: #ffffff;
 }
 
-.content-section-b {
-    padding: 100px 0;
-    border-top: 1px solid #e7e7e7;
-    float: left;
-    width: 100%;
-    border-bottom: 1px solid #e7e7e7;
+.name {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.content-section-c {
-    padding: 100px 0;
-    float: left;
-    width: 100%;
-    background-color: #f8f8f8;
+.passion {
+    font-size: 15px;
+    font-family: Courier New, Courier, monospace;
+    /*font-family: 'Inconsolata', monospace;*/
 }
 
-.section-heading {
-    margin-bottom: 30px;
+.networks {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
 }
 
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
+.networks .button-element {
+    font-size: 18px;
+    text-decoration: none;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
-.banner {
-    padding: 100px 0;
-    float: left;
-    width: 100%;
-    color: #f8f8f8;
-    background: #111;
-    background-size: cover;
-}
-
-.banner h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
-    letter-spacing: -1px;
-}
-
-.banner ul {
-    margin-bottom: 0;
-}
-
-.banner-social-buttons {
-    float: right;
-    margin-top: 0;
-}
-
-@media(max-width:1199px) {
-    ul.banner-social-buttons {
-        float: left;
-        margin-top: 25px;
-    }
-}
-
-@media(max-width:767px) {
-    .banner h2 {
-        margin: 0;
-        text-align: center;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
-    }
-
-    ul.banner-social-buttons {
-        width: 100%;
-    }
-
-    ul.banner-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-        clear: both;
-        text-align: center;
-    }
-
-    ul.banner-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-    footer {
-        text-align: center;
-    }
-}
-
-footer {
-    padding: 50px 0;
-    float: left;
-    width: 100%;
-    background-color: #fff;
-}
-
-p.copyright {
-    margin: 15px 0 0;
-}
-
-.btn.btn-default.btn-lg {
-    color: #000;
-    background: #fff;
-    border: none;
-    border-radius: 1px;
-}
-
-.btn.btn-default.btn-lg:hover {
-    background: #0062ff;
+.networks .button-element:hover {
     color: #fff;
 }
 
-a:link, a:visited {
-    color: #0062ff;
-    text-decoration: none;
+hr {
+    width: 210px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    border-color: red;
 }
 
-a:hover, a:active {
-    color: #000;
-    transition: all 0.3s;
+.corner-ribbon {
+    width: 200px;
+    background: red;
+    position: absolute;
+    top: 50px;
+    left: -43px;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.noselect {
+    -webkit-touch-callout: ;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
 }
