@@ -84,6 +84,15 @@ hr {
     -webkit-transform: rotate(-45deg);
 }
 
+.footer {
+    color: red;
+    font-size:10px;
+    position:absolute;
+    bottom:0;
+    height:60px;  
+    font-family: 'Montserrat', sans-serif;
+}
+
 .noselect {
     -webkit-touch-callout: none;
     /* iOS Safari */
